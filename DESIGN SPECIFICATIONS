@@ -1,0 +1,213 @@
+Portfolio Dashboard Design Specifications
+1. Overview
+This document outlines the design specifications for the responsive portfolio dashboard, including color schemes, typography, spacing guidelines, breakpoints, and component design decisions.
+2. Color Palette
+Primary Colors
+
+Primary: #6366f1 (Indigo)
+Primary Hover: #4f46e5 (Darker Indigo)
+Secondary: #10b981 (Emerald Green)
+
+Background Colors
+
+Dark Background: #1e293b (Slate 800)
+Card Background: #334155 (Slate 700)
+
+Text Colors
+
+Primary Text: #f8fafc (Slate 50)
+Secondary Text: #cbd5e1 (Slate 300)
+Muted Text: #94a3b8 (Slate 400)
+
+Border Colors
+
+Border: #475569 (Slate 600)
+
+Status Colors
+
+Success: #10b981 (Emerald Green)
+Error/Negative: #ef4444 (Red)
+Warning: #f59e0b (Amber)
+Info: #3b82f6 (Blue)
+
+Chart Colors
+
+Chart Gradient Fill: rgba(99, 102, 241, 0.1) (Translucent Indigo)
+Chart Line: #6366f1 (Indigo)
+Doughnut Chart Segments:
+
+#6366f1 (Indigo)
+#8b5cf6 (Violet)
+#a855f7 (Purple)
+#d946ef (Fuchsia)
+#ec4899 (Pink)
+#10b981 (Emerald)
+
+
+
+3. Typography
+Font Family
+
+System font stack:
+cssfont-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+             Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+
+Font Sizes
+
+Extra Large (h1): 1.5rem (24px)
+Large (h2): 1.25rem (20px)
+Medium (h3): 1rem (16px)
+Normal (body): 0.875rem (14px)
+Small: 0.75rem (12px)
+
+Font Weights
+
+Regular: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+4. Spacing System
+The spacing system follows a consistent scale:
+
+4xs: 0.25rem (4px)
+3xs: 0.5rem (8px)
+2xs: 0.75rem (12px)
+xs: 1rem (16px)
+sm: 1.25rem (20px)
+md: 1.5rem (24px)
+lg: 2rem (32px)
+xl: 2.5rem (40px)
+2xl: 3rem (48px)
+
+5. Border Radius
+
+Small: 0.25rem (4px)
+Medium: 0.5rem (8px)
+Large: 0.75rem (12px)
+Circle/Pill: 9999px
+
+6. Shadows
+
+Card Shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
+Dropdown Shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)
+
+7. Responsive Breakpoints
+
+Mobile: < 768px
+Tablet: 768px - 1024px
+Desktop: > 1024px
+
+Grid System Behavior
+
+Desktop: Sidebar (240px) + Main Content (1fr)
+Mobile: Full-width with collapsible sidebar
+
+8. Component Specifications
+Card Components
+Stat Card
+
+Padding: 1.25rem (20px)
+Background: Card Background
+Border Radius: Medium (8px)
+Layout: Flex column with header row
+
+Chart Card
+
+Padding: 1.25rem (20px)
+Background: Card Background
+Border Radius: Medium (8px)
+Chart Height: 250px
+
+Navigation
+Sidebar
+
+Width: 240px
+Background: Card Background
+Item Padding: 0.75rem 1rem (12px 16px)
+Item Spacing: 0.5rem (8px)
+Active Item: Primary color background, White text
+Hover Item: rgba(255, 255, 255, 0.1) background
+Mobile Behavior: Off-canvas with overlay
+
+Buttons and Inputs
+Search Input
+
+Height: 2.5rem (40px)
+Padding: 0.75rem 1rem 0.75rem 2.5rem (12px 16px 12px 40px)
+Border: 1px Border Color
+Border Radius: Medium (8px)
+Background: Card Background
+Text Color: Primary Text
+
+Chart Actions Button
+
+Padding: 0.5rem (8px)
+Border Radius: Small (4px)
+Background: rgba(255, 255, 255, 0.1)
+Active Background: Primary Color
+
+9. Animation & Transitions
+
+Default Transition: all 0.2s ease
+Sidebar Transition: left 0.3s ease
+Hover Effects: Subtle background/opacity changes
+
+10. Chart Configuration
+Line Chart (Portfolio Performance)
+
+Line Tension: 0.4 (Smooth curves)
+Fill: Subtle gradient
+Grid: Hidden X grid, subtle Y grid
+Tooltip: Currency formatting
+Time Periods: Weekly, Monthly, Yearly
+
+Doughnut Chart (Asset Allocation)
+
+Cutout: 70%
+Legend Position: Bottom
+Legend Style: Circle point style
+No Border: borderWidth: 0
+
+11. Mobile Optimization
+Mobile Navigation
+
+Hamburger menu toggle
+Off-canvas sidebar
+Semi-transparent overlay
+Touch-friendly tap targets (minimum 44x44px)
+
+Mobile Content
+
+Single column layout
+Stacked cards
+Reduced padding where appropriate
+Header becomes column on small screens
+
+12. Accessibility Guidelines
+
+Color Contrast: All text meets WCAG 2.1 AA standard
+Focus States: Visible focus indicators on interactive elements
+Semantic HTML: Proper use of HTML5 semantic elements
+Screen Reader Support: Appropriate ARIA labels where necessary
+Touch Targets: Minimum size of 44x44px for mobile interactions
+
+13. Icon System
+Using inline SVG icons with the following properties:
+
+Default Size: 18px or 20px
+Stroke Width: 2px
+Color: Inherited from text color
+Alignment: Vertically centered with text
+
+14. Data Visualization Best Practices
+
+Color Differentiation: Distinct colors for different data categories
+Interactive Tooltips: Detailed information on hover/touch
+Responsive Resizing: Charts adapt to container width
+Limited Data Points: Not overcrowding visualizations
+Clear Labels: Readable typography and formatting
+
+
+These design specifications serve as a comprehensive guide for maintaining design consistency across the responsive portfolio dashboard.
